@@ -19,7 +19,6 @@ The workflow is deliberately empirical-first:
 5. test which inexpensive signals are associated with residual risk;
 6. derive a risk-profiling or adaptive-verification policy only if the data support it.
 
-No paid model API or paid cloud service is required.
 
 ## Current public cohorts
 
