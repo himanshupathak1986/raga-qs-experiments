@@ -1,0 +1,38 @@
+study:
+  title: "Passing Tests Is Not Enough: Joint Quality and Security Risk Profiling of AI-Generated Software Changes"
+  theme: "Beyond Functional Correctness"
+  language: "python"
+  paid_services_allowed: false
+
+swebench:
+  artifact_repo: "SWE-bench/20260901_mini-v2.4.2_gemini-3-5-flash"
+  predictions_url: "https://raw.githubusercontent.com/SWE-bench/20260901_mini-v2.4.2_gemini-3-5-flash/main/all_preds.jsonl"
+  results_url: "https://raw.githubusercontent.com/SWE-bench/experiments/main/evaluation/verified/20260901_mini-v2.4.2_gemini-3-5-flash/results/results.json"
+  dataset_server: "https://datasets-server.huggingface.co/rows"
+  dataset_name: "SWE-bench/SWE-bench_Verified"
+  dataset_config: "default"
+  dataset_split: "test"
+  exclude_test_files_from_quality: true
+
+securityeval:
+  copilot_csv: "https://raw.githubusercontent.com/s2e-lab/SecurityEval/main/Result/testcases_copilot.csv"
+  incoder_csv: "https://raw.githubusercontent.com/s2e-lab/SecurityEval/main/Result/testcases_incoder.csv"
+
+quality:
+  count_ruff_findings: true
+  security_sensitive_patterns:
+    - "\\beval\\s*\\("
+    - "\\bexec\\s*\\("
+    - "\\bos\\.system\\s*\\("
+    - "\\bsubprocess\\.(?:call|run|Popen)\\s*\\("
+    - "\\bshell\\s*=\\s*True"
+    - "\\bpickle\\.loads\\s*\\("
+    - "\\byaml\\.load\\s*\\("
+    - "\\bverify\\s*=\\s*False"
+    - "\\bhashlib\\.md5\\s*\\("
+    - "\\bhashlib\\.sha1\\s*\\("
+
+statistics:
+  bootstrap_iterations: 2000
+  random_seed: 42
+  alpha: 0.05
