@@ -1,0 +1,55 @@
+{
+  "authoritative_git_ref": "paper-results-v1",
+  "cohort": {
+    "attempted_patches": 441,
+    "repositories": 12,
+    "resolved_patches": 359,
+    "unresolved_patches": 82
+  },
+  "derived_data": {
+    "data/processed/patch_metrics.csv": {
+      "level": "patch",
+      "rows": 441,
+      "sha256": "159e767640ce6f57ea1d48b8a6511fef01954f17dd79160f9c2a952ddd0c7494",
+      "unique_patches": 441
+    },
+    "data/processed/quality_degradation_patch.csv": {
+      "level": "patch",
+      "rows": 359,
+      "sha256": "6995d2a615d8f497051864059416a7db52619f56528058eef084ade2b94156de",
+      "unique_patches": 359
+    },
+    "data/processed/quality_metrics_final.csv": {
+      "level": "file",
+      "rows": 416,
+      "sha256": "a8c6ade068d03bb08baad36f38e602a057ad6a9a05b00db7822f3d47944c795a",
+      "unique_patches": 359
+    },
+    "data/processed/quality_metrics_patch.csv": {
+      "level": "patch",
+      "rows": 359,
+      "sha256": "bc0de6a549f89c74cb9becd87dc2dba416484f98af33431830f0707e9b4a54d9",
+      "unique_patches": 359
+    }
+  },
+  "frozen_at_utc": "2026-10-11T03:53:47.676009+00:00",
+  "source_artifact_checksums": {
+    "data/processed/swebench_cohort.jsonl": {
+      "rows": 441,
+      "sha256": "665b4c81261139a0c8de7b7e7ce014206c0f85ca5e10b15e796cc22c05abac49"
+    },
+    "data/raw/securityeval_copilot.csv": {
+      "rows": 131,
+      "sha256": "312504bb86eb852a6b9c1ae15b1f9d9287c735bbe7de029b1dc2678bcf7b27ee"
+    },
+    "data/raw/securityeval_incoder.csv": {
+      "rows": 131,
+      "sha256": "ba088ac761cd809f3ceec28cb072a496a7851f08d4371e7ba60b38b74614b1bc"
+    }
+  },
+  "sources": {
+    "securityeval": "https://github.com/s2e-lab/SecurityEval",
+    "swebench_predictions": "https://github.com/SWE-bench/20260901_mini-v2.4.2_gemini-3-5-flash",
+    "swebench_verified": "SWE-bench/SWE-bench_Verified"
+  }
+}
