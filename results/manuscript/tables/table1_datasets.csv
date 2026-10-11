@@ -1,0 +1,4 @@
+Dataset,Role,Evaluated outputs,Primary analyzed subset,Notes
+SWE-bench Verified model-output cohort,Functional outcome + software-quality analysis,441,359 functionally successful patches,Quality analysis restricted to successful patches
+SecurityEval Copilot outputs,Security analyzer assessment,130,96 manually labeled vulnerable outputs,Secondary analysis of published benchmark outputs
+SecurityEval InCoder outputs,Security analyzer assessment,130,88 manually labeled vulnerable outputs,Secondary analysis of published benchmark outputs
