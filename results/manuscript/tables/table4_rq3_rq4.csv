@@ -1,0 +1,9 @@
+Analysis,Sample,Signal,Statistic,Value,95% CI / comparison,Adjusted p
+Association,All,Churn,Spearman ρ,0.44,,<0.001
+Association,All,Control-token delta,Spearman ρ,0.636,,<0.001
+Association,Excluding Django,Churn,Spearman ρ,0.427,,<0.001
+Association,Excluding Django,Control-token delta,Spearman ρ,0.624,,<0.001
+20% verification budget,All,Control-token delta,Burden captured,32.4,29.6–35.2% (random 20.1%),
+20% verification budget,All,Churn,Burden captured,27.6,24.4–30.9% (random 20.1%),
+20% verification budget,Excluding Django,Control-token delta,Burden captured,31.7,28.1–36.1% (random 20.3%),
+20% verification budget,Excluding Django,Churn,Burden captured,26.0,21.7–30.6% (random 20.3%),

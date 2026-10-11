@@ -14,3 +14,8 @@ results/statistics/*
 !results/statistics/.gitkeep
 results/figures/*
 !results/figures/.gitkeep
+
+# Local experiment logs and one-off recovery helpers
+logs/
+recover_failed_quality.sh
+run_overnight_quality.sh

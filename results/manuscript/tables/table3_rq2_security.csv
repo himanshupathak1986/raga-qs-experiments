@@ -1,0 +1,7 @@
+Model,Analysis,Vulnerable n,Detected (%),Detection 95% CI,Missed (%)
+Copilot,CodeQL,96,25.0,17.4–34.5,75.0
+Copilot,Bandit,96,13.5,8.1–21.8,86.5
+Incoder,CodeQL,88,22.7,15.2–32.5,77.3
+Incoder,Bandit,88,12.5,7.1–21.0,87.5
+Copilot,CodeQL ∪ Bandit,96,35.4,26.6–45.4,64.6
+Incoder,CodeQL ∪ Bandit,88,33.0,24.0–43.3,67.0

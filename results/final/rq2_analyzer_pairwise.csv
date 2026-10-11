@@ -1,0 +1,4 @@
+model,manual_vulnerable_n,both_detect,codeql_only_detect,bandit_only_detect,both_miss,discordant_pairs,mcnemar_exact_p
+copilot,96,3,21,10,62,31,0.07075554598122835
+incoder,88,2,18,9,59,27,0.12207812070846558
+pooled,184,5,39,19,121,58,0.011928139715763179
