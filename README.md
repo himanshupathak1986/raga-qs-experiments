@@ -107,13 +107,8 @@ Then run the full functionally successful cohort:
 python scripts/extract_quality_metrics.py --only-resolved
 ```
 
-### 4. Analyze SecurityEval
 
-```bash
-python scripts/analyze_securityeval.py
-```
-
-### 5. Run the final paper analyses
+### 4. Run the final paper analyses
 
 ```bash
 python scripts/analyze_rq1_quality.py
@@ -134,10 +129,11 @@ python scripts/generate_manuscript_assets.py
 Generated data are written under:
 
 ```text
-data/processed/
-results/tables/
-results/statistics/
-results/figures/
+data/processed/                 Frozen derived datasets
+data/manifests/                 Data provenance and checksums
+results/final/                  Frozen statistical results used in the paper
+results/manuscript/figures/     Final paper figures
+results/manuscript/tables/      Final paper tables
 ```
 
 Raw public benchmark downloads are excluded from Git by default so the repository stays small and provenance remains explicit.
