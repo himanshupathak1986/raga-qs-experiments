@@ -113,20 +113,21 @@ python scripts/extract_quality_metrics.py --only-resolved
 python scripts/analyze_securityeval.py
 ```
 
-### 5. Run statistical analyses and generate initial tables/figures
+### 5. Run the final paper analyses
 
 ```bash
-python scripts/statistical_analysis.py
-python scripts/generate_figures.py
+python scripts/analyze_rq1_quality.py
+python scripts/analyze_rq1_repository_sensitivity.py
+python scripts/analyze_rq1_degradation_profile.py
+python scripts/analyze_rq2_security.py
+python scripts/analyze_rq2_union.py
+python scripts/analyze_rq3_predictors.py
+python scripts/analyze_rq3_overlap_sensitivity.py
+python scripts/analyze_rq4_prioritization.py
+python scripts/analyze_rq4_bootstrap.py
+python scripts/generate_manuscript_assets.py
 ```
 
-Or run the non-expensive stages together:
-
-```bash
-python scripts/run_pipeline.py --skip-quality
-```
-
-The repository never invokes a paid model API.
 
 ## Outputs
 
